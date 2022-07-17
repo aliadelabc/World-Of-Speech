@@ -1,3 +1,3 @@
 # PartOfSpeech
-# : an interactive activity using React.js, node.js, and Express.js that helps the students practice categorizing a
+# Interactive activity using React.js, node.js, and Express.js that helps the students practice categorizing a
 set of words according to their part of speech
