@@ -24,10 +24,12 @@ const Questions = ({ lightMode }) => {
   const [step, setStep] = useState(1);
   const [loading, setLoading] = useState(false);
   const [answers, setAnswers] = useState([]);
-  const [checked1, setChecked1] = useState(false);
-  const [checked2, setChecked2] = useState(false);
-  const [checked3, setChecked3] = useState(false);
-  const [checked4, setChecked4] = useState(false);
+  const [checked, setChecked] = useState({
+    checked1: false,
+    checked2: false,
+    checked3: false,
+    checked4: false,
+  });
 
   const [isCorrect, setIsCorrect] = useState("not empty");
 
@@ -36,32 +38,39 @@ const Questions = ({ lightMode }) => {
   };
   const handleChange1 = (value, checked) => {
     !checked ? setCorrectAnswer(value) : setCorrectAnswer("");
-
-    setChecked1(!checked1);
-    setChecked2(false);
-    setChecked3(false);
-    setChecked4(false);
+    setChecked({
+      checked1: !checked.checked1,
+      checked2: false,
+      checked3: false,
+      checked4: false,
+    });
   };
   const handleChange2 = (value, checked) => {
     !checked ? setCorrectAnswer(value) : setCorrectAnswer("");
-    setChecked1(false);
-    setChecked2(!checked2);
-    setChecked3(false);
-    setChecked4(false);
+    setChecked({
+      checked1: false,
+      checked2: !checked.checked2,
+      checked3: false,
+      checked4: false,
+    });
   };
   const handleChange3 = (value, checked) => {
     !checked ? setCorrectAnswer(value) : setCorrectAnswer("");
-    setChecked1(false);
-    setChecked2(false);
-    setChecked3(!checked3);
-    setChecked4(false);
+    setChecked({
+      checked1: false,
+      checked2: false,
+      checked3: !checked.checked3,
+      checked4: false,
+    });
   };
   const handleChange4 = (value, checked) => {
     !checked ? setCorrectAnswer(value) : setCorrectAnswer("");
-    setChecked1(false);
-    setChecked2(false);
-    setChecked3(false);
-    setChecked4(!checked4);
+    setChecked({
+      checked1: false,
+      checked2: false,
+      checked3: false,
+      checked4: !checked.checked4,
+    });
   };
 
   const handleSubmit = () => {
@@ -117,10 +126,12 @@ const Questions = ({ lightMode }) => {
     };
     setCorrectAnswer("");
     setIsCorrect("not empty");
-    setChecked1(false);
-    setChecked2(false);
-    setChecked3(false);
-    setChecked4(false);
+    setChecked({
+      checked1: false,
+      checked2: false,
+      checked3: false,
+      checked4: false,
+    });
     if (step === 1) {
       fetchQuestions();
     }
@@ -147,28 +158,28 @@ const Questions = ({ lightMode }) => {
                 value={"adjective"}
                 label={"adjective"}
                 handleChange={handleChange1}
-                checked={checked1}
+                checked={checked.checked1}
                 isCorrect={isCorrect}
               />
               <Check
                 value={"noun"}
                 label={"noun"}
                 handleChange={handleChange2}
-                checked={checked2}
+                checked={checked.checked2}
                 isCorrect={isCorrect}
               />
               <Check
                 value={"verb"}
                 label={"verb"}
                 handleChange={handleChange3}
-                checked={checked3}
+                checked={checked.checked3}
                 isCorrect={isCorrect}
               />
               <Check
                 value={"adverb"}
                 label={"adverb"}
                 handleChange={handleChange4}
-                checked={checked4}
+                checked={checked.checked4}
                 isCorrect={isCorrect}
               />
             </FormGroup>
