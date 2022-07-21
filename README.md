@@ -21,7 +21,7 @@ Now your activity started.
  # Practice Screen
 Click on correct answer, then click on <SUBMIT / NEXT> button.
     <br />
-When you complete 10 words ou will be prompted to <Submit Answers>.
+When you complete 10 words you will be prompted to <Submit Answers>.
 # Result Screen
  Your resulted rank is now displayed.
     <br />
