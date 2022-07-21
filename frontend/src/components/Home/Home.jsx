@@ -1,6 +1,11 @@
 import React from "react";
+
+//components
 import Button from "@material-ui/core/Button";
+
+//navigation
 import { useNavigate } from "react-router-dom";
+
 const Home = () => {
   const navigate = useNavigate();
   const handleClick = () => {

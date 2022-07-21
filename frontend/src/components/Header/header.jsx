@@ -1,5 +1,8 @@
 import React from "react";
+
+//css
 import "./header.css";
+
 export const Header = () => {
   return (
     <div className="header">

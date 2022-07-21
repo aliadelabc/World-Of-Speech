@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
+
 //css
 import "./questions.css";
+
 //components
 import CircularProgress from "@mui/material/CircularProgress";
 import Button from "@mui/material/Button";
@@ -13,6 +15,7 @@ import Check from "../Type/checkBox";
 
 //navigation
 import { useNavigate } from "react-router-dom";
+
 //sweetalert
 import Swal from "sweetalert2";
 
