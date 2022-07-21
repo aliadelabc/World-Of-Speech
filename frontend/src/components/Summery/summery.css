@@ -1,0 +1,8 @@
+.summery {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4pt;
+  padding: 10px 20px;
+  margin: 10px 0;
+  height: 100%;
+}
