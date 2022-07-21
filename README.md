@@ -19,11 +19,12 @@ You will find home page with button <START ACTIVITY> click on it to start your p
   <br />
 Now your activity started.
  # Practice Screen
-  <br />
 Click on correct answer, then click on <SUBMIT / NEXT> button.
-  <br />
+    <br />
 When you complete 10 words ou will be prompted to <Submit Answers>.
 #Result Screen
   Your resulted rank is now displayed
+    <br />
+You can Try Again the practice useing <Try Again> button.
 
 
