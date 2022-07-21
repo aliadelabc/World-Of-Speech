@@ -8,7 +8,8 @@ import axios from "axios";
 //components
 import CircularProgress from "@mui/material/CircularProgress";
 import Button from "@material-ui/core/Button";
-
+//sweetalert
+import Swal from "sweetalert2";
 //navigate
 import { useNavigate } from "react-router-dom";
 
@@ -40,17 +41,28 @@ const Summery = ({ lightMode }) => {
     };
     const fetchRank = async (score) => {
       setLoading(true);
-      const res = await axios.post("http://localhost:4000/api/v1/fetch-rank", {
-        score,
-      });
-      setRank(res.data);
-      setLoading(false);
+      try {
+        const res = await axios.post(
+          "http://localhost:4000/api/v1/fetch-rank",
+          {
+            score,
+          }
+        );
+        setRank(res.data);
+        setLoading(false);
+      } catch (err) {
+        Swal.fire({
+          icon: "error",
+          title: err,
+        });
+        setLoading(false);
+      }
     };
     handleScore();
   }, []);
   return (
     <>
-      {score === 0 ? (
+      {loading ? (
         <div
           style={{
             display: "flex",

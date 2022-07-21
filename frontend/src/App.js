@@ -28,7 +28,7 @@ function App() {
       style={{
         height: "100vh",
         backgroundColor: lightMode ? "#fff" : "#282c34",
-        color: lightMode ? "#FC8571" : "#FFDB70",
+        color: lightMode ? "black" : "#FFDB70",
         transition: "all 0.5s linear",
       }}
     >

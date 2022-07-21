@@ -13,7 +13,8 @@ import Check from "../Type/checkBox";
 
 //navigation
 import { useNavigate } from "react-router-dom";
-//location
+//sweetalert
+import Swal from "sweetalert2";
 
 const Questions = ({ lightMode }) => {
   const navigate = useNavigate();
@@ -102,9 +103,17 @@ const Questions = ({ lightMode }) => {
   useEffect(() => {
     const fetchQuestions = async () => {
       setLoading(true);
-      const res = await axios.get("http://localhost:4000/api/v1/word-list");
-      setQuestions(res.data);
-      setLoading(false);
+      try {
+        const res = await axios.get("http://localhost:4000/api/v1/word-list");
+        setQuestions(res.data);
+        setLoading(false);
+      } catch (err) {
+        Swal.fire({
+          icon: "danger",
+          title: err,
+        });
+        setLoading(false);
+      }
     };
     setCorrectAnswer("");
     setIsCorrect("not empty");

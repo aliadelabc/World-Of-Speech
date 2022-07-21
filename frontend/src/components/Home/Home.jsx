@@ -8,11 +8,7 @@ const Home = () => {
   };
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
-      <Button
-        onClick={handleClick}
-        style={{ backgroundColor: "#98D7E6" }}
-        variant="contained"
-      >
+      <Button onClick={handleClick} color="primary" variant="contained">
         Start Activity
       </Button>
     </div>
