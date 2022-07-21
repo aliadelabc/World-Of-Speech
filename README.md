@@ -25,6 +25,6 @@ When you complete 10 words you will be prompted to <Submit Answers>.
 # Result Screen
  Your resulted rank is now displayed.
     <br />
-You can Try Again the practice useing <Try Again> button.
+You can Try Again the practice using <Try Again> button.
 
 
