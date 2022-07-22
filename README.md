@@ -26,5 +26,7 @@ When you complete 10 words you will be prompted to <Submit Answers>.
  Your resulted rank is now displayed.
     <br />
 You can Try Again the practice using TRY AGAIN button.
+# How To Test Frontend App?
+  Open terminal and run this command ( npm test ).
 
 
