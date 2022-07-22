@@ -39,8 +39,8 @@ const Questions = ({ lightMode }) => {
   const handleNextStep = () => {
     setStep(step + 1);
   };
-  const handleChange1 = (value, checked) => {
-    !checked ? setCorrectAnswer(value) : setCorrectAnswer("");
+  const handleChange1 = (value, check) => {
+    !check ? setCorrectAnswer(value) : setCorrectAnswer("");
     setChecked({
       checked1: !checked.checked1,
       checked2: false,
@@ -48,8 +48,8 @@ const Questions = ({ lightMode }) => {
       checked4: false,
     });
   };
-  const handleChange2 = (value, checked) => {
-    !checked ? setCorrectAnswer(value) : setCorrectAnswer("");
+  const handleChange2 = (value, check) => {
+    !check ? setCorrectAnswer(value) : setCorrectAnswer("");
     setChecked({
       checked1: false,
       checked2: !checked.checked2,
@@ -57,8 +57,8 @@ const Questions = ({ lightMode }) => {
       checked4: false,
     });
   };
-  const handleChange3 = (value, checked) => {
-    !checked ? setCorrectAnswer(value) : setCorrectAnswer("");
+  const handleChange3 = (value, check) => {
+    !check ? setCorrectAnswer(value) : setCorrectAnswer("");
     setChecked({
       checked1: false,
       checked2: false,
@@ -66,8 +66,8 @@ const Questions = ({ lightMode }) => {
       checked4: false,
     });
   };
-  const handleChange4 = (value, checked) => {
-    !checked ? setCorrectAnswer(value) : setCorrectAnswer("");
+  const handleChange4 = (value, check) => {
+    !check ? setCorrectAnswer(value) : setCorrectAnswer("");
     setChecked({
       checked1: false,
       checked2: false,
