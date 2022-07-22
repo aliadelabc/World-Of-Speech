@@ -16,9 +16,8 @@ After installing dependencies, open terminal and run this command ( npm start ) 
 Then go to your browser and navigate to url http://localhost:3000/ . 
 # Home Screen
 You will find home page with button START ACTIVITY click on it to start your practice.
-  <br />
-Now your activity started.
  # Practice Screen
+ Now your activity started.
 Click on correct answer, then click on <SUBMIT / NEXT> button.
     <br />
 When you complete 10 words you will be prompted to <Submit Answers>.
