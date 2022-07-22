@@ -21,7 +21,7 @@ You will find home page with button START ACTIVITY click on it to start your pra
  <br/>
 Click on correct answer, then click on <SUBMIT / NEXT> button.
     <br />
-When you complete 10 words you will be prompted to <Submit Answers>.
+When you complete 10 words you will be prompted to click on Submit Activity button.
 # Result Screen
  Your resulted rank is now displayed.
     <br />
