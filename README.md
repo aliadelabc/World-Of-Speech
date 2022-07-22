@@ -15,7 +15,7 @@ After installing dependencies, open terminal and run this command ( npm start ) 
 <br />
 Then go to your browser and navigate to url http://localhost:3000/ . 
 # Home Screen
-You will find home page with button <START ACTIVITY> click on it to start your practice.
+You will find home page with button START ACTIVITY click on it to start your practice.
   <br />
 Now your activity started.
  # Practice Screen
