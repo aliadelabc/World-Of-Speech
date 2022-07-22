@@ -121,7 +121,7 @@ const Questions = ({ lightMode }) => {
         setLoading(false);
       } catch (err) {
         Swal.fire({
-          icon: "danger",
+          icon: "error",
           title: err,
         });
         setLoading(false);
