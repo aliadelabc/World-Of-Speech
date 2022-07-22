@@ -3,7 +3,7 @@ import React from "react";
 //css
 import "./header.css";
 
-export const Header = () => {
+const Header = () => {
   return (
     <div className="header">
       <span className="title">World of Speech</span>
@@ -14,3 +14,4 @@ export const Header = () => {
     </div>
   );
 };
+export default Header;

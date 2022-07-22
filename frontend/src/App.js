@@ -3,7 +3,7 @@ import "./App.css";
 import { Container, Switch } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 import { grey } from "@material-ui/core/colors";
-import { Header } from "./components/Header/header";
+import Header from "./components/Header/header";
 import CustomRoutes from "./routes/routes";
 
 function App() {
